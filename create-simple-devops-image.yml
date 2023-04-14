@@ -16,8 +16,8 @@
       command: docker push akshaymore5233/simple-devops-image
       
     - name: remove web dir contents
-      file: path='/home/mydata/web/{{ item }}' state=absent
+      file: path='/opt/docker state=absent
       with_fileglob:
-    - /home/mydata/web/*
+    - /opt/docker/*
 
     
