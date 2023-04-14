@@ -18,6 +18,6 @@
     - name: Delete content & directory
       ansible.builtin.file:
       state: absent
-      path: /home/mydata/web/
+      path: /opt/docker/*.*
 
     
