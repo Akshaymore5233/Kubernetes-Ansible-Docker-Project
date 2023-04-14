@@ -15,9 +15,9 @@
     - name: push image on to dockerhub
       command: docker push akshaymore5233/simple-devops-image
       
-    - name: remove web dir contents
-      file: path='/opt/docker state=absent
-      with_fileglob:
-    - /opt/docker/*
+    - name: Delete content & directory
+      ansible.builtin.file:
+      state: absent
+      path: /home/mydata/web/
 
     
